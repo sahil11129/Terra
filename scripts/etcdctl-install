@@ -1,0 +1,13 @@
+#! /bin/bash
+
+ETCD_VER=v3.4.20
+
+DOWNLOAD_URL="https://storage.googleapis.com/etcd/${ETCD_VER}/etcd-${ETCD_VER}-linux-amd64.tar.gz"
+
+#rm -f /tmp/etcd-${ETCD_VER}-linux-amd64.tar.gz
+rm -rf /tmp/etcd-download-test && mkdir -p /tmp/etcd-download-test
+
+( cd /tmp/etcd-download-test; curl -L ${DOWNLOAD_URL} | tar xz --strip-components=1 etcd-${ETCD_VER}-linux-amd64/etcdctl; chmod 755 etcdctl )
+
+#/tmp/etcd-download-test/etcd --version
+/tmp/etcd-download-test/etcdctl version

@@ -1,0 +1,10 @@
+apiVersion: ai.ibm.com/v1
+kind: WatsonServing
+metadata:
+  name: watsonserving-sample
+  namespace: __NAMESPACE__
+spec:
+  etcd:
+    externalConnection:
+      secretName: model-serving-etcd
+

@@ -1,0 +1,55 @@
+apiVersion: serving.kserve.io/v1alpha1
+kind: ServingRuntime
+metadata:
+  name: watson-nlp-runtime
+spec:
+  containers:
+  - name: watson-nlp-runtime
+    env:
+    - name: ENABLE_IZUMO_PYARROW
+      value: "true"
+    - name: LOG_LEVEL
+      value: info
+    - name: JVM_OPTIONS
+      value: '["-Xmx5g"]'
+    - name: METRICS_PORT
+      value: "2113"
+    - name: DEFAULT_MODEL_SIZE_MULTIPLIER
+      value: "4"
+    - name: LATENCY_BASED_AUTOSCALING_ENABLED
+      value: "true"
+    - name: MAX_MODEL_CONCURRENCY
+      value: "5"
+    - name: MAX_LOADING_CONCURRENCY
+      value: "2"
+    - name: CAPACITY
+      value: "28000000000"
+    - name: DEFAULT_MODEL_SIZE
+      value: "1773741824"
+    - name: MODEL_LOADING_TIMEOUT_MS
+      value: "300000"
+    - name: SERVER_THREAD_POOL_SIZE
+      value: "30"
+    - name: RUNTIME_VERSION
+      value: 0.13.1
+    - name: WATSON_LIBRARY
+      value: watson_nlp
+    image: image-registry.openshift-image-registry.svc:5000/__NAMESPACE__/watson-nlp-runtime:latest
+    imagePullPolicy: IfNotPresent
+    command: ["python3", "-m", "watson_runtime.grpc_server"]
+    resources:
+      limits:
+        cpu: 2
+        memory: 4Gi
+      requests:
+        cpu: 1
+        memory: 2Gi
+  grpcEndpoint: port:8085
+  grpcDataEndpoint: port:8085
+  storageHelper:
+    disabled: false
+  supportedModelFormats:
+    - name: watson-nlp
+      autoSelect: true
+  multiModel: true
+

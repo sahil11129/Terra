@@ -1,0 +1,13 @@
+apiVersion: operators.coreos.com/v1alpha2
+kind: OperatorGroup
+metadata:
+  name: ibm-ai-watsonserving-catalog-group
+  namespace: __NAMESPACE__
+  labels:
+    app.kubernetes.io/instance: ibm-ai-watsonserving-operator
+    app.kubernetes.io/managed-by: ibm-ai-watsonserving-operator
+    app.kubernetes.io/name: ibm-ai-watsonserving-operator
+spec:
+  targetNamespaces:
+  - __NAMESPACE__
+
