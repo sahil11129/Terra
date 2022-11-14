@@ -7,6 +7,12 @@ terraform {
   }
 }
 
+# Configure the IBM Provider
+provider "ibm" {
+  region = "us-south"
+}
+
+
 module "dev_infrastructure_watsonassistant" {
   source = "github.com/ibm-garage-cloud/terraform-service-watsonassistant?ref=v1.0.0"
 
