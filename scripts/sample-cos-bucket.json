@@ -1,8 +1,0 @@
-{
-    "type": "s3",
-    "access_key_id": "__ACCESS_KEY_ID__",
-    "secret_access_key": "__SECRET_ACCESS_KEY__",
-    "endpoint_url": "https://s3.us-south.cloud-object-storage.appdomain.cloud",
-    "region": "us-south",
-    "default_bucket": "__BUCKET_NAME__"
-}
