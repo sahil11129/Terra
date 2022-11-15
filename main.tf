@@ -193,7 +193,8 @@ resource "null_resource" "nfs_storage" {
     environment = {
       HOME             = "${abspath(path.module)}/home"
       IBMCLOUD_API_KEY = var.ibmcloud_api_key
-      CLUSTERNAME      = var.cluster_name
+      #CLUSTERNAME      = var.cluster_name
+      CLUSTERNAME      = ibm_container_cluster.cluster.id
       STORAGESIZE      = "${var.storage_size}Gi"
     }
     working_dir = "${abspath(path.module)}/scripts"
