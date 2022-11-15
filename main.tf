@@ -166,18 +166,18 @@ resource "null_resource" "add_user_rbac" {
   ]
 }
 
-# NFS storage
-module "nfs" {
-  count  = var.nfs > 0 ? 1 : 0
-  #source = "git::ssh://git@github.ibm.com/dte2-0/terraform-modules.git//ibm-roks-nfs"
+# # NFS storage
+# module "nfs" {
+#   count  = var.nfs > 0 ? 1 : 0
+#   #source = "git::ssh://git@github.ibm.com/dte2-0/terraform-modules.git//ibm-roks-nfs"
   
-  source = "git@github.com:sahil11129/Terra.git//ibm-roks-nfs"
-  ibmcloud_api_key = var.ibmcloud_api_key
-  cluster_name     = ibm_container_cluster.cluster.id
-  storage_size     = var.nfs
+#   source = "git@github.com:sahil11129/Terra.git//ibm-roks-nfs"
+#   ibmcloud_api_key = var.ibmcloud_api_key
+#   cluster_name     = ibm_container_cluster.cluster.id
+#   storage_size     = var.nfs
 
-  depends_on = [
-    ibm_container_cluster.cluster
-  ]
-}
+#   depends_on = [
+#     ibm_container_cluster.cluster
+#   ]
+# }
 
