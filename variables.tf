@@ -57,10 +57,10 @@ variable "cloudTarget" {
 
 
 
-variable "ibmcloud_api_key" {
-  description = "IBM Cloud API Key"
-  type = string
-}
+# variable "ibmcloud_api_key" {
+#   description = "IBM Cloud API Key"
+#   type = string
+# }
 
 variable "cluster_name" {
   description = "Cluster Name/ID"
