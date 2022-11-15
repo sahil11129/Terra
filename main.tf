@@ -48,18 +48,18 @@ resource "ibm_container_cluster" "cluster" {
   }
 }
 
-#### Watson SaaS ################################
-#resource "ibm_resource_instance" "watson_discovery" {
-#  name              = "discovery-${lower(var.user_id)}-${random_string.suffix.result}"
-#  service           = "discovery"
-#  plan              = "plus"
-#  location          = lookup(var.ibm_regions_map, var.datacenter).region
-#  resource_group_id = data.ibm_resource_group.resource_group.id
-#  tags              = [var.requestId]
-#  parameters = {
-#    service-endpoints : "public-and-private"
-#  }
-#}
+### Watson SaaS ################################
+resource "ibm_resource_instance" "watson_discovery" {
+ name              = "discovery-${lower(var.user_id)}-${random_string.suffix.result}"
+ service           = "discovery"
+ plan              = "plus"
+ location          = lookup(var.ibm_regions_map, var.datacenter).region
+ resource_group_id = data.ibm_resource_group.resource_group.id
+ tags              = [var.requestId]
+ parameters = {
+   service-endpoints : "public-and-private"
+ }
+}
 
 resource "ibm_resource_instance" "watson_assistant" {
   name              = "assistant-${lower(var.user_id)}-${random_string.suffix.result}"
