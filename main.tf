@@ -49,17 +49,17 @@ resource "ibm_container_cluster" "cluster" {
 }
 
 #### Watson SaaS ################################
-resource "ibm_resource_instance" "watson_discovery" {
-  name              = "discovery-${lower(var.user_id)}-${random_string.suffix.result}"
-  service           = "discovery"
-  plan              = "plus"
-  location          = lookup(var.ibm_regions_map, var.datacenter).region
-  resource_group_id = data.ibm_resource_group.resource_group.id
-  tags              = [var.requestId]
-  parameters = {
-    service-endpoints : "public-and-private"
-  }
-}
+#resource "ibm_resource_instance" "watson_discovery" {
+#  name              = "discovery-${lower(var.user_id)}-${random_string.suffix.result}"
+#  service           = "discovery"
+#  plan              = "plus"
+#  location          = lookup(var.ibm_regions_map, var.datacenter).region
+#  resource_group_id = data.ibm_resource_group.resource_group.id
+#  tags              = [var.requestId]
+#  parameters = {
+#    service-endpoints : "public-and-private"
+#  }
+#}
 
 resource "ibm_resource_instance" "watson_assistant" {
   name              = "assistant-${lower(var.user_id)}-${random_string.suffix.result}"
@@ -169,8 +169,9 @@ resource "null_resource" "add_user_rbac" {
 # NFS storage
 module "nfs" {
   count  = var.nfs > 0 ? 1 : 0
-  source = "git::ssh://git@github.ibm.com/dte2-0/terraform-modules.git//ibm-roks-nfs"
-
+  #source = "git::ssh://git@github.ibm.com/dte2-0/terraform-modules.git//ibm-roks-nfs"
+  
+  source = "git@github.com:sahil11129/Tera_watson_roks.git//ibm-roks-nfs"
   ibmcloud_api_key = var.ibmcloud_api_key
   cluster_name     = ibm_container_cluster.cluster.id
   storage_size     = var.nfs
