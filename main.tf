@@ -171,7 +171,7 @@ module "nfs" {
   count  = var.nfs > 0 ? 1 : 0
   #source = "git::ssh://git@github.ibm.com/dte2-0/terraform-modules.git//ibm-roks-nfs"
   
-  source = "git::ssh://git@github.com:sahil11129/Tera_watson_roks.git//ibm-roks-nfs"
+  source = "git@github.com:sahil11129/Tera_watson_roks.git//ibm-roks-nfs"
   ibmcloud_api_key = var.ibmcloud_api_key
   cluster_name     = ibm_container_cluster.cluster.id
   storage_size     = var.nfs
