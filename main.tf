@@ -182,10 +182,10 @@ resource "null_resource" "add_user_rbac" {
 # }
 
 
-resource "local_file" "home" {
-  content  = "home folder"
-  filename = "${path.module}/home/home.txt"
-}
+# resource "local_file" "home" {
+#   content  = "home folder"
+#   filename = "${path.module}/home/home.txt"
+# }
 
 resource "null_resource" "nfs_storage" {
   provisioner "local-exec" {
