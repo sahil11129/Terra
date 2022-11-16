@@ -1,7 +1,7 @@
 variable "resource_group_name" {
   description = "Resource Group for Cluster"
   type        = string
-  default     = "Techzone"
+  default     = "mukesh-dhamat-rg"
 }
 
 variable "shared_access_group_name" {
@@ -14,7 +14,8 @@ variable "shared_access_group_name" {
 variable "datacenter" {
   description = "Datacenter"
   type        = string
-  default     = "tok02"
+  #default     = "tok02"
+  default = "dal13"
 }
 
 variable "ibm_regions_map" {
@@ -60,10 +61,11 @@ variable "cloudTarget" {
 #   type = string
 # }
 
-# variable "cluster_name" {
-#   description = "Cluster Name/ID"
-#   type = string
-# }
+ variable "cluster_name" {
+   description = "Cluster Name/ID"
+   type = string
+   default="mukesh-drilling_advisor-demo"
+ }
 
 variable "storage_size" {
   description = "NFS Size"
