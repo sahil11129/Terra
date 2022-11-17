@@ -39,7 +39,7 @@ resource "ibm_container_cluster" "cluster" {
   public_vlan_id          = data.external.vlan.result.publicVLAN
   private_vlan_id         = data.external.vlan.result.privateVLAN
   force_delete_storage    = true
-  tags                    = [var.user_id, var.requestId]
+  tags                    = [var.requestId]
   public_service_endpoint = true
 
   timeouts {

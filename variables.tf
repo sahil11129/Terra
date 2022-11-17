@@ -1,13 +1,13 @@
 variable "resource_group_name" {
   description = "Resource Group for Cluster"
   type        = string
-  default     = "mukesh-dhamat-rg"
+  default     = "Sahil-Desai-RG"
 }
 
 variable "shared_access_group_name" {
   description = "Shared Access Group for Users"
   type        = string
-  default     = "techzone-group"
+  default     = "aaron5-ag"
 }
 
 # Definded by reservation-ms
@@ -64,7 +64,7 @@ variable "cloudTarget" {
  variable "cluster_name" {
    description = "Cluster Name/ID"
    type = string
-   default="mukesh-drilling_advisor-demo"
+   default="itzroks-sahil1112-2vscmtnz"
  }
 
 variable "storage_size" {

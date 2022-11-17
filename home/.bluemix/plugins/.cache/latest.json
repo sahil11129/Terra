@@ -1,0 +1,428 @@
+{
+  "LastUpdated": "2022-11-17T13:22:19.336274+05:30",
+  "Success": true,
+  "RepositoryURL": "https://plugins.cloud.ibm.com",
+  "CLIVersion": "2.12.1",
+  "Plugins": [
+    {
+      "PluginName": [
+        "container-registry",
+        "cr"
+      ],
+      "Version": "1.0.2",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/container-registry/1.0.2/container-registry-darwin-amd64-1.0.2",
+      "Checksum": "00f8dc59afa8f7b8ee096b26cb6d91dfe281b8524f89557718c9236b69edca66",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "container-service",
+        "kubernetes-service",
+        "ks"
+      ],
+      "Version": "1.0.459",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/container-service/1.0.459/container-service-darwin-amd64-1.0.459",
+      "Checksum": "f6dea1c5f55703863e1d0acc173f456234c70aaad8ba2235c5f208065bb4b0bf",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "analytics-engine"
+      ],
+      "Version": "1.0.194",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/analytics-engine/1.0.194/analytics-engine-darwin-amd64-1.0.194",
+      "Checksum": "a682e454c092773b511d60025566a6b6ed91e865a3b63ca25ce5926ef11d0b11",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "cloud-functions",
+        "wsk",
+        "functions",
+        "fn"
+      ],
+      "Version": "1.0.61",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/cloud-functions/1.0.61/cloud-functions-darwin-amd64-1.0.61",
+      "Checksum": "c25034eb6126951472afcd99d824f47328fc13eeddccfe8cda0b5d65e9d09d0b",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "cloud-internet-services",
+        "cis"
+      ],
+      "Version": "1.14.9",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/cloud-internet-services/1.14.9/cloud-internet-services-darwin-amd64-1.14.9",
+      "Checksum": "c7aecc2670cb82f3f0abcdb8813560cb7c9a5c638b6c38abf14a9852cc4f5c1a",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "dbaas-cli",
+        "dbaas"
+      ],
+      "Version": "2.2.0",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/dbaas-cli/2.2.0/dbaas-cli-darwin-amd64-2.2.0",
+      "Checksum": "9cff0ea6807488aed495e9f0a064387aba71b04f3871436ba90d87323cc2799a",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "cloud-databases",
+        "cdb"
+      ],
+      "Version": "0.12.0",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/cloud-databases/0.12.0/cloud-databases-darwin-amd64-0.12.0",
+      "Checksum": "fc32883aaf94b349558c1146c85a43ce4a22a68e39d9deee9bd444c4dd46e011",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "key-protect",
+        "kp"
+      ],
+      "Version": "0.7.0",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/key-protect/0.7.0/key-protect-darwin-amd64-0.7.0",
+      "Checksum": "44edc53c6b9053f7d580ac8bfc29b4d5bdafac44935a98efdcabc7e763534c03",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "doi",
+        "doi"
+      ],
+      "Version": "0.4.0",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/doi/0.4.0/doi-darwin-amd64-0.4.0",
+      "Checksum": "7aa3edb17f49ce2f761c87dfbafa96250341afb5084c13e9b615548ce09bc647",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "tke"
+      ],
+      "Version": "1.3.1",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/tke/1.3.1/tke-darwin-amd64-1.3.1",
+      "Checksum": "39741e70225fb522df3523a019e6634317f3f0f96d49a0cbbdbed8f8370e3f54",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "cloud-object-storage"
+      ],
+      "Version": "1.6.0",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/cloud-object-storage/1.6.0/cloud-object-storage-darwin-amd64-1.6.0",
+      "Checksum": "c447ecc94855b813495d9aea4e8eb24aa551ce0e024d6774d34ca4ac0ee5e268",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "event-streams"
+      ],
+      "Version": "2.3.2",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/event-streams/2.3.2/event-streams-darwin-amd64-2.3.2",
+      "Checksum": "5ba8b1aa54ad087d3d01e94ff4a61db73b71991bf372b9fc8918521b8f599b66",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "power-iaas",
+        "pi"
+      ],
+      "Version": "0.4.3",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/power-iaas/0.4.3/power-iaas-darwin-amd64-0.4.3",
+      "Checksum": "4fd469ad7200fcceb74481e71a66d9acf622826f6060965087b5b797554833c9",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "vpc-infrastructure",
+        "infrastructure-service",
+        "is"
+      ],
+      "Version": "6.0.0",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/vpc-infrastructure/6.0.0/vpc-infrastructure-darwin-amd64-6.0.0",
+      "Checksum": "372a7aff23b55b0945ee25ab97be9092b4d051d639845a23aab355bf8858442b",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "schematics",
+        "sch"
+      ],
+      "Version": "1.12.3",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/schematics/1.12.3/schematics-darwin-amd64-1.12.3",
+      "Checksum": "da474e30dad4bb6a6d89b540e0f2f8fe233ddb649a3705372e3695ad129066dd",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "cloud-dns-services",
+        "dns"
+      ],
+      "Version": "0.7.2",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/cloud-dns-services/0.7.2/cloud-dns-services-darwin-amd64-0.7.2",
+      "Checksum": "7aa10d2ef94dc36a37a3505a75d51dd581152974fc0cc016de74563d42b64fb3",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "dl-cli",
+        "dl"
+      ],
+      "Version": "0.5.2",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/dl-cli/0.5.2/dl-cli-darwin-amd64-0.5.2",
+      "Checksum": "943142100919f137770a1206717d52e89ad91c08aaa4700b6f40c13d2d153688",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "watson"
+      ],
+      "Version": "0.0.11",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/watson/0.0.11/watson-darwin-amd64-0.0.11",
+      "Checksum": "ce8dc3c12dc6a153d79cd4ec15ed70e95ebb39779f574881b66033446a4ac53f",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "catalogs-management"
+      ],
+      "Version": "2.2.4",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/catalogs-management/2.2.4/catalogs-management-darwin-amd64-2.2.4",
+      "Checksum": "7b4cd0ed2fc8fbb11c602151b1bc44b8b11283cbd3132b63ac3ed20bf87abe8f",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "tg-cli",
+        "tg"
+      ],
+      "Version": "0.8.2",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/tg-cli/0.8.2/tg-cli-darwin-amd64-0.8.2",
+      "Checksum": "550722987e4d87e050f368be4e09ef7a4e5b887eaa8e2d3f5fc9829f39cd733c",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "observe-service"
+      ],
+      "Version": "1.0.82",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/observe-service/1.0.82/observe-service-darwin-amd64-1.0.82",
+      "Checksum": "b655cf6f0a41da80c9c50193eebf5f43efa59deb1c0f8dc318ce04c4bf3e21e5",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "code-engine"
+      ],
+      "Version": "1.40.1",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/code-engine/1.40.1/code-engine-darwin-amd64-1.40.1",
+      "Checksum": "a48b0867bf183f85c4287282abd2064e89c7bbc08c61d611bc91c9654f7ac88b",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "hpvs"
+      ],
+      "Version": "1.4.21",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/hpvs/1.4.21/hpvs-darwin-amd64-1.4.21",
+      "Checksum": "bbbb19dd6bc6b6949373eac5f6aed5a0743b9482c4b0299be430b183ff06e40a",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "secrets-manager",
+        "sm"
+      ],
+      "Version": "0.1.25",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/secrets-manager/0.1.25/secrets-manager-darwin-amd64-0.1.25",
+      "Checksum": "b6c617997399910b507d6972f1a27f0840273cbee258022730666a7ab925aaa2",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "app-configuration",
+        "ac"
+      ],
+      "Version": "1.0.11",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/app-configuration/1.0.11/app-configuration-darwin-amd64-1.0.11",
+      "Checksum": "25b63364b28f2f0539bd98f45ff6c924dcaf075acbd7711964da9371b1455144",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "monitoring"
+      ],
+      "Version": "0.2.12",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/monitoring/0.2.12/monitoring-darwin-amd64-0.2.12",
+      "Checksum": "4459418d12042eff3dd0ed1ec8dc831c7d0ba50d1f6c7ebe7889a08a4006b00e",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "logging"
+      ],
+      "Version": "0.0.8",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/logging/0.0.8/logging-darwin-amd64-0.0.8",
+      "Checksum": "8aa7c9d0cca7195a96ea368b4c09ed5fe32447e64d45774b6021e47ef40335fa",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "cloudant",
+        "cl"
+      ],
+      "Version": "0.0.6",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/cloudant/0.0.6/cloudant-darwin-amd64-0.0.6",
+      "Checksum": "eea7612993bacad9e93d5db4caa8475211576012f1f425fe99636c0166e2e1a0",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "hpcs-cert-mgr",
+        "hpcs-cert-mgr"
+      ],
+      "Version": "1.0.0",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/hpcs-cert-mgr/1.0.0/hpcs-cert-mgr-darwin-amd64-1.0.0",
+      "Checksum": "cffb58c1586fdc72ec7fd57bece989b6049fc653a5ab532385eba4e4b867cec7",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "atracker",
+        "at"
+      ],
+      "Version": "0.2.17",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/atracker/0.2.17/atracker-darwin-amd64-0.2.17",
+      "Checksum": "34dcfcae34bee75d78cb3449e3e09a4b0e810eba4a2534c45275a95b16783645",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "analytics-engine-v3",
+        "ae-v3"
+      ],
+      "Version": "2.0.0",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/analytics-engine-v3/2.0.0/analytics-engine-v3-darwin-amd64-2.0.0",
+      "Checksum": "046e0e4d147556fa73ca1d8c3f6e1ca4adb874ef6a46054cf2675fbae6b3eadc",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "cra",
+        "cra"
+      ],
+      "Version": "1.0.4",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/cra/1.0.4/cra-darwin-amd64-1.0.4",
+      "Checksum": "d530d4819bec2e49890226922fbe7507e9bf3172175c0f23a753e8b09186af53",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "event-notifications",
+        "en",
+        "event-notifications"
+      ],
+      "Version": "0.1.2",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/event-notifications/0.1.2/event-notifications-darwin-amd64-0.1.2",
+      "Checksum": "541f9b075737a69f9542d33257cdbb69545448ab4b1256b129190e3fef21e423",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "dvaas",
+        "watson-query"
+      ],
+      "Version": "1.0.2",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/dvaas/1.0.2/dvaas-darwin-amd64-1.0.2",
+      "Checksum": "027e160353f4aa04976f2d58abd2d50db314bf4ce2c3a06f5e1bd1edd6687a62",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "hpnet"
+      ],
+      "Version": "1.0.2",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/hpnet/1.0.2/hpnet-darwin-amd64-1.0.2",
+      "Checksum": "9adf322aef179f410d9ad11dee511a13c3b6743cfa40bb7d325157f1f195ec7f",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "qiskit-runtime",
+        "qr"
+      ],
+      "Version": "0.1.5",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/qiskit-runtime/0.1.5/qiskit-runtime-darwin-amd64-0.1.5",
+      "Checksum": "ea6df0431c5dad113ab06c9665cdc957ba5412784324fa70f484686faabfd572",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "hpcs"
+      ],
+      "Version": "0.0.1",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/hpcs/0.0.1/hpcs-darwin-amd64-0.0.1",
+      "Checksum": "ae629778fd04ab5088fc3f566c4112e0aba0e1797dd547e69f907aba9e0b7134",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "cbr"
+      ],
+      "Version": "1.2.0",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/cbr/1.2.0/cbr-darwin-amd64-1.2.0",
+      "Checksum": "d7469a2c9c8942b0bb34bd3555d5e4b36d696cb99074fc3ad9d0afb0eb4b3e39",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    },
+    {
+      "PluginName": [
+        "privileged-access-gateway",
+        "pag"
+      ],
+      "Version": "1.2.2",
+      "URL": "https://plugins.cloud.ibm.com/downloads/bluemix-plugins/privileged-access-gateway/1.2.2/privileged-access-gateway-darwin-amd64-1.2.2",
+      "Checksum": "243b4033a2a26c8cfacf3c24585f23a42672ba3e3c65d860774907b0c611dfdf",
+      "ReleaseNotesLink": "",
+      "IsAlternate": false
+    }
+  ]
+}
