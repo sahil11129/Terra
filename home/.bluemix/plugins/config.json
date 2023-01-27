@@ -19,6 +19,30 @@
       },
       "Namespaces": [
         {
+          "ParentName": "",
+          "Name": "sat",
+          "Aliases": null,
+          "Description": "Manage IBM Cloud Satellite clusters.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "",
+          "Name": "ks",
+          "Aliases": [
+            "cs",
+            "oc"
+          ],
+          "Description": "Manage Kubernetes and OpenShift clusters in IBM Cloud. Aliases include 'ibmcloud oc'.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks",
+          "Name": "storage",
+          "Aliases": null,
+          "Description": "View and modify storage resources.",
+          "Stage": "beta"
+        },
+        {
           "ParentName": "ks",
           "Name": "api-key",
           "Aliases": null,
@@ -26,46 +50,25 @@
           "Stage": ""
         },
         {
-          "ParentName": "ks credential",
-          "Name": "set",
+          "ParentName": "ks",
+          "Name": "zone",
           "Aliases": null,
-          "Description": "Set credentials that allow you to access the IBM Cloud classic infrastructure portfolio through your IBM Cloud account.",
+          "Description": "List availability zones and modify the zones attached to a worker pool.",
           "Stage": ""
         },
         {
           "ParentName": "ks",
-          "Name": "credential",
+          "Name": "kms",
           "Aliases": null,
-          "Description": "Set and unset credentials that allow you to access the IBM Cloud classic infrastructure portfolio through your IBM Cloud account.",
+          "Description": "View and configure Key Management Service integrations.",
           "Stage": ""
         },
         {
           "ParentName": "ks",
-          "Name": "infra-permissions",
+          "Name": "dedicated",
           "Aliases": null,
-          "Description": "View information about infrastructure permissions that allow you to access the IBM Cloud classic infrastructure portfolio through your IBM Cloud account.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks logging",
-          "Name": "config",
-          "Aliases": null,
-          "Description": "View or modify log forwarding configurations for a cluster.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks logging",
-          "Name": "filter",
-          "Aliases": null,
-          "Description": "View or modify log filters for a cluster.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks logging",
-          "Name": "autoupdate",
-          "Aliases": null,
-          "Description": "Manage automatic updates of the Fluentd add-on in a cluster.",
-          "Stage": ""
+          "Description": "View, create, and remove a dedicated host or dedicated host pool.",
+          "Stage": "experimental"
         },
         {
           "ParentName": "ks",
@@ -96,10 +99,87 @@
           "Stage": ""
         },
         {
+          "ParentName": "ks",
+          "Name": "ingress",
+          "Aliases": null,
+          "Description": "View and modify Ingress services and settings",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks",
+          "Name": "credential",
+          "Aliases": null,
+          "Description": "Set and unset credentials that allow you to access the IBM Cloud classic infrastructure portfolio through your IBM Cloud account.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks",
+          "Name": "infra-permissions",
+          "Aliases": null,
+          "Description": "View information about infrastructure permissions that allow you to access the IBM Cloud classic infrastructure portfolio through your IBM Cloud account.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks",
+          "Name": "worker-pool",
+          "Aliases": null,
+          "Description": "View and modify worker pools for a cluster.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks",
+          "Name": "worker",
+          "Aliases": null,
+          "Description": "View and modify worker nodes for a cluster.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks",
+          "Name": "alb",
+          "Aliases": null,
+          "Description": "View and configure an Ingress application load balancer (ALB).",
+          "Stage": "deprecated"
+        },
+        {
+          "ParentName": "ks",
+          "Name": "nlb-dns",
+          "Aliases": null,
+          "Description": "Create and manage host names for network load balancer (NLB) IP addresses in a cluster and health check monitors for host names.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks",
+          "Name": "cluster",
+          "Aliases": null,
+          "Description": "View and modify cluster and cluster service settings.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks",
+          "Name": "vlan",
+          "Aliases": null,
+          "Description": "List public and private VLANs for a zone and view the VLAN spanning status.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks alb",
+          "Name": "migrate",
+          "Aliases": null,
+          "Description": "Migrate your IBM Cloud Ingress configmap and resources to the Kubernetes Ingress format.",
+          "Stage": "deprecated"
+        },
+        {
           "ParentName": "ks alb",
           "Name": "create",
           "Aliases": null,
           "Description": "Create and enable an Ingress ALB in a cluster.",
+          "Stage": "deprecated"
+        },
+        {
+          "ParentName": "ks alb",
+          "Name": "cert",
+          "Aliases": null,
+          "Description": "Manage Ingress ALB certificates in a cluster.",
           "Stage": "deprecated"
         },
         {
@@ -117,24 +197,17 @@
           "Stage": "deprecated"
         },
         {
-          "ParentName": "ks alb",
-          "Name": "cert",
+          "ParentName": "ks cluster",
+          "Name": "autoupdate",
           "Aliases": null,
-          "Description": "Manage Ingress ALB certificates in a cluster.",
-          "Stage": "deprecated"
+          "Description": "Manage automatic patch updates of the cluster master.",
+          "Stage": ""
         },
         {
-          "ParentName": "ks alb",
-          "Name": "migrate",
+          "ParentName": "ks cluster",
+          "Name": "feature",
           "Aliases": null,
-          "Description": "Migrate your IBM Cloud Ingress configmap and resources to the Kubernetes Ingress format.",
-          "Stage": "deprecated"
-        },
-        {
-          "ParentName": "ks",
-          "Name": "alb",
-          "Aliases": null,
-          "Description": "View and configure an Ingress application load balancer (ALB).",
+          "Description": "Enable and disable cluster features.",
           "Stage": "deprecated"
         },
         {
@@ -145,38 +218,10 @@
           "Stage": ""
         },
         {
-          "ParentName": "ks cluster addon",
-          "Name": "enable",
-          "Aliases": null,
-          "Description": "Enable cluster add-ons.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks cluster addon",
-          "Name": "update",
-          "Aliases": null,
-          "Description": "Update cluster add-ons.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks cluster addon",
-          "Name": "disable",
-          "Aliases": null,
-          "Description": "Disable cluster add-ons.",
-          "Stage": ""
-        },
-        {
           "ParentName": "ks cluster",
           "Name": "addon",
           "Aliases": null,
           "Description": "View, enable, update, and disable cluster add-ons.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks cluster",
-          "Name": "autoupdate",
-          "Aliases": null,
-          "Description": "Manage automatic patch updates of the cluster master.",
           "Stage": ""
         },
         {
@@ -191,48 +236,6 @@
           "Name": "subnet",
           "Aliases": null,
           "Description": "Add and create portable subnets for a classic cluster.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks cluster",
-          "Name": "service",
-          "Aliases": null,
-          "Description": "View, bind, and unbind IBM Cloud services on a cluster.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks cluster",
-          "Name": "pull-secret",
-          "Aliases": null,
-          "Description": "Manage image pull secrets for the cluster to access images in IBM Cloud Container Registry.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks cluster master",
-          "Name": "audit-webhook",
-          "Aliases": null,
-          "Description": "View and modify the audit webhook configuration for a cluster's Kubernetes API server. The webhook backend forwards API server audit logs to a remote server.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks cluster master private-service-endpoint",
-          "Name": "allowlist",
-          "Aliases": null,
-          "Description": "Manage the private service endpoint allowlist.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks cluster master",
-          "Name": "private-service-endpoint",
-          "Aliases": null,
-          "Description": "Manage the private service endpoint of a cluster.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks cluster master",
-          "Name": "public-service-endpoint",
-          "Aliases": null,
-          "Description": "Manage the public service endpoint of a cluster.",
           "Stage": ""
         },
         {
@@ -257,11 +260,39 @@
           "Stage": ""
         },
         {
-          "ParentName": "ks cluster feature",
+          "ParentName": "ks cluster",
+          "Name": "service",
+          "Aliases": null,
+          "Description": "View, bind, and unbind IBM Cloud services on a cluster.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks cluster",
+          "Name": "pull-secret",
+          "Aliases": null,
+          "Description": "Manage image pull secrets for the cluster to access images in IBM Cloud Container Registry.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks cluster addon",
+          "Name": "disable",
+          "Aliases": null,
+          "Description": "Disable cluster add-ons.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks cluster addon",
+          "Name": "update",
+          "Aliases": null,
+          "Description": "Update cluster add-ons.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks cluster addon",
           "Name": "enable",
           "Aliases": null,
-          "Description": "Enable cluster features.",
-          "Stage": "deprecated"
+          "Description": "Enable cluster add-ons.",
+          "Stage": ""
         },
         {
           "ParentName": "ks cluster feature",
@@ -271,24 +302,80 @@
           "Stage": "deprecated"
         },
         {
-          "ParentName": "ks cluster",
-          "Name": "feature",
+          "ParentName": "ks cluster feature",
+          "Name": "enable",
           "Aliases": null,
-          "Description": "Enable and disable cluster features.",
+          "Description": "Enable cluster features.",
           "Stage": "deprecated"
         },
         {
-          "ParentName": "ks",
-          "Name": "cluster",
+          "ParentName": "ks cluster master",
+          "Name": "public-service-endpoint",
           "Aliases": null,
-          "Description": "View and modify cluster and cluster service settings.",
+          "Description": "Manage the public service endpoint of a cluster.",
           "Stage": ""
         },
         {
-          "ParentName": "ks ingress status-report",
-          "Name": "ignored-errors",
+          "ParentName": "ks cluster master",
+          "Name": "private-service-endpoint",
           "Aliases": null,
-          "Description": "View and configure ignored warnings for a cluster.",
+          "Description": "Manage the private service endpoint of a cluster.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks cluster master",
+          "Name": "audit-webhook",
+          "Aliases": null,
+          "Description": "View and modify the audit webhook configuration for a cluster's Kubernetes API server. The webhook backend forwards API server audit logs to a remote server.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks cluster master private-service-endpoint",
+          "Name": "allowlist",
+          "Aliases": null,
+          "Description": "Manage the private service endpoint allowlist.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks credential",
+          "Name": "set",
+          "Aliases": null,
+          "Description": "Set credentials that allow you to access the IBM Cloud classic infrastructure portfolio through your IBM Cloud account.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks dedicated",
+          "Name": "host",
+          "Aliases": null,
+          "Description": "View, create, and delete a dedicated host.",
+          "Stage": "experimental"
+        },
+        {
+          "ParentName": "ks dedicated",
+          "Name": "pool",
+          "Aliases": null,
+          "Description": "View, create, and delete a dedicated host pool.",
+          "Stage": "experimental"
+        },
+        {
+          "ParentName": "ks dedicated host",
+          "Name": "placement",
+          "Aliases": null,
+          "Description": "Enable or disable dedicated host placement.",
+          "Stage": "experimental"
+        },
+        {
+          "ParentName": "ks ingress",
+          "Name": "alb",
+          "Aliases": null,
+          "Description": "View and configure an Ingress application load balancer (ALB).",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks ingress",
+          "Name": "instance",
+          "Aliases": null,
+          "Description": "Manage registered instances of the IBM Cloud Secrets Manager.",
           "Stage": ""
         },
         {
@@ -296,13 +383,6 @@
           "Name": "status-report",
           "Aliases": null,
           "Description": "View and configure Ingress status reports.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks ingress load-balancer",
-          "Name": "proxy-protocol",
-          "Aliases": null,
-          "Description": "VPC Gen 2 only: Modify the PROXY protocol configuration for ALB load balancers. After you run these commands, existing load balancers are deleted and recreated, which can cause service disruptions. Two unused IP addresses must be available in each subnet during the load balancer recreation.",
           "Stage": ""
         },
         {
@@ -315,38 +395,10 @@
           "Stage": ""
         },
         {
-          "ParentName": "ks ingress secret",
-          "Name": "field",
-          "Aliases": null,
-          "Description": "Manage the fields of an Ingress secret.",
-          "Stage": ""
-        },
-        {
           "ParentName": "ks ingress",
           "Name": "secret",
           "Aliases": null,
           "Description": "Manage Ingress secrets in a cluster.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks ingress alb",
-          "Name": "create",
-          "Aliases": null,
-          "Description": "Create and enable an Ingress ALB in a cluster.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks ingress alb",
-          "Name": "enable",
-          "Aliases": null,
-          "Description": "Enable an Ingress ALB in a cluster.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks ingress alb",
-          "Name": "autoupdate",
-          "Aliases": null,
-          "Description": "Manage automatic updates for the Ingress ALB add-on in a cluster.",
           "Stage": ""
         },
         {
@@ -364,10 +416,24 @@
           "Stage": ""
         },
         {
-          "ParentName": "ks ingress",
-          "Name": "alb",
+          "ParentName": "ks ingress alb",
+          "Name": "autoupdate",
           "Aliases": null,
-          "Description": "View and configure an Ingress application load balancer (ALB).",
+          "Description": "Manage automatic updates for the Ingress ALB add-on in a cluster.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks ingress alb",
+          "Name": "enable",
+          "Aliases": null,
+          "Description": "Enable an Ingress ALB in a cluster.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks ingress alb",
+          "Name": "create",
+          "Aliases": null,
+          "Description": "Create and enable an Ingress ALB in a cluster.",
           "Stage": ""
         },
         {
@@ -378,24 +444,24 @@
           "Stage": ""
         },
         {
-          "ParentName": "ks ingress",
-          "Name": "instance",
+          "ParentName": "ks ingress load-balancer",
+          "Name": "proxy-protocol",
           "Aliases": null,
-          "Description": "Manage registered instances of the IBM Cloud Secrets Manager.",
+          "Description": "VPC Gen 2 only: Modify the PROXY protocol configuration for ALB load balancers. After you run these commands, existing load balancers are deleted and recreated, which can cause service disruptions. Two unused IP addresses must be available in each subnet during the load balancer recreation.",
           "Stage": ""
         },
         {
-          "ParentName": "ks",
-          "Name": "ingress",
+          "ParentName": "ks ingress secret",
+          "Name": "field",
           "Aliases": null,
-          "Description": "View and modify Ingress services and settings",
+          "Description": "Manage the fields of an Ingress secret.",
           "Stage": ""
         },
         {
-          "ParentName": "ks kms",
-          "Name": "instance",
+          "ParentName": "ks ingress status-report",
+          "Name": "ignored-errors",
           "Aliases": null,
-          "Description": "View and configure available Key Management Service instances.",
+          "Description": "View and configure ignored warnings for a cluster.",
           "Stage": ""
         },
         {
@@ -406,17 +472,45 @@
           "Stage": ""
         },
         {
-          "ParentName": "ks",
-          "Name": "kms",
+          "ParentName": "ks kms",
+          "Name": "instance",
           "Aliases": null,
-          "Description": "View and configure Key Management Service integrations.",
+          "Description": "View and configure available Key Management Service instances.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks logging",
+          "Name": "autoupdate",
+          "Aliases": null,
+          "Description": "Manage automatic updates of the Fluentd add-on in a cluster.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks logging",
+          "Name": "filter",
+          "Aliases": null,
+          "Description": "View or modify log filters for a cluster.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "ks logging",
+          "Name": "config",
+          "Aliases": null,
+          "Description": "View or modify log forwarding configurations for a cluster.",
           "Stage": ""
         },
         {
           "ParentName": "ks nlb-dns",
-          "Name": "create",
+          "Name": "secret",
           "Aliases": null,
-          "Description": "Create a DNS host name.",
+          "Description": "Manage the secret for an NLB subdomain.",
+          "Stage": "experimental"
+        },
+        {
+          "ParentName": "ks nlb-dns",
+          "Name": "monitor",
+          "Aliases": null,
+          "Description": "Create and manage health check monitors for network load balancer (NLB) IP addresses and host names in a cluster",
           "Stage": ""
         },
         {
@@ -428,31 +522,10 @@
         },
         {
           "ParentName": "ks nlb-dns",
-          "Name": "monitor",
+          "Name": "create",
           "Aliases": null,
-          "Description": "Create and manage health check monitors for network load balancer (NLB) IP addresses and host names in a cluster",
+          "Description": "Create a DNS host name.",
           "Stage": ""
-        },
-        {
-          "ParentName": "ks nlb-dns",
-          "Name": "secret",
-          "Aliases": null,
-          "Description": "Manage the secret for an NLB subdomain.",
-          "Stage": "experimental"
-        },
-        {
-          "ParentName": "ks",
-          "Name": "nlb-dns",
-          "Aliases": null,
-          "Description": "Create and manage host names for network load balancer (NLB) IP addresses in a cluster and health check monitors for host names.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks storage",
-          "Name": "attachment",
-          "Aliases": null,
-          "Description": "View and modify storage volume attachments of worker nodes in your cluster.",
-          "Stage": "beta"
         },
         {
           "ParentName": "ks storage",
@@ -462,10 +535,10 @@
           "Stage": "beta"
         },
         {
-          "ParentName": "ks",
-          "Name": "storage",
+          "ParentName": "ks storage",
+          "Name": "attachment",
           "Aliases": null,
-          "Description": "View and modify storage resources.",
+          "Description": "View and modify storage volume attachments of worker nodes in your cluster.",
           "Stage": "beta"
         },
         {
@@ -476,24 +549,10 @@
           "Stage": ""
         },
         {
-          "ParentName": "ks",
-          "Name": "vlan",
-          "Aliases": null,
-          "Description": "List public and private VLANs for a zone and view the VLAN spanning status.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks",
-          "Name": "worker",
-          "Aliases": null,
-          "Description": "View and modify worker nodes for a cluster.",
-          "Stage": ""
-        },
-        {
           "ParentName": "ks worker-pool",
-          "Name": "create",
+          "Name": "label",
           "Aliases": null,
-          "Description": "Add a worker pool to a cluster. No worker nodes are created until zones are added to the worker pool.",
+          "Description": "Set and remove custom Kubernetes labels for all worker nodes in a worker pool.",
           "Stage": ""
         },
         {
@@ -505,16 +564,9 @@
         },
         {
           "ParentName": "ks worker-pool",
-          "Name": "label",
+          "Name": "create",
           "Aliases": null,
-          "Description": "Set and remove custom Kubernetes labels for all worker nodes in a worker pool.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks",
-          "Name": "worker-pool",
-          "Aliases": null,
-          "Description": "View and modify worker pools for a cluster.",
+          "Description": "Add a worker pool to a cluster. No worker nodes are created until zones are added to the worker pool.",
           "Stage": ""
         },
         {
@@ -525,69 +577,17 @@
           "Stage": ""
         },
         {
-          "ParentName": "ks",
-          "Name": "zone",
+          "ParentName": "sat",
+          "Name": "group",
           "Aliases": null,
-          "Description": "List availability zones and modify the zones attached to a worker pool.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "ks dedicated host",
-          "Name": "placement",
-          "Aliases": null,
-          "Description": "Enable or disable dedicated host placement.",
-          "Stage": "experimental"
-        },
-        {
-          "ParentName": "ks dedicated",
-          "Name": "host",
-          "Aliases": null,
-          "Description": "View, create, and delete a dedicated host.",
-          "Stage": "experimental"
-        },
-        {
-          "ParentName": "ks dedicated",
-          "Name": "pool",
-          "Aliases": null,
-          "Description": "View, create, and delete a dedicated host pool.",
-          "Stage": "experimental"
-        },
-        {
-          "ParentName": "ks",
-          "Name": "dedicated",
-          "Aliases": null,
-          "Description": "View, create, and remove a dedicated host or dedicated host pool.",
-          "Stage": "experimental"
-        },
-        {
-          "ParentName": "",
-          "Name": "ks",
-          "Aliases": [
-            "cs",
-            "oc"
-          ],
-          "Description": "Manage Kubernetes and OpenShift clusters in IBM Cloud. Aliases include 'ibmcloud oc'.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "sat location",
-          "Name": "dns",
-          "Aliases": null,
-          "Description": "Create and manage subdomains for the hosts assigned to the control plane in a Satellite location.",
+          "Description": "View and manage Satellite cluster groups. Cluster groups are used to subscribe clusters to Satellite configurations of Kubernetes resources.",
           "Stage": ""
         },
         {
           "ParentName": "sat",
-          "Name": "location",
+          "Name": "storage",
           "Aliases": null,
-          "Description": "Create, view, and modify Satellite locations.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "sat",
-          "Name": "endpoint",
-          "Aliases": null,
-          "Description": "View and manage Satellite endpoints.",
+          "Description": "View and manage Satellite storage resources.",
           "Stage": ""
         },
         {
@@ -606,9 +606,9 @@
         },
         {
           "ParentName": "sat",
-          "Name": "group",
+          "Name": "location",
           "Aliases": null,
-          "Description": "View and manage Satellite cluster groups. Cluster groups are used to subscribe clusters to Satellite configurations of Kubernetes resources.",
+          "Description": "Create, view, and modify Satellite locations.",
           "Stage": ""
         },
         {
@@ -619,10 +619,10 @@
           "Stage": ""
         },
         {
-          "ParentName": "sat config",
-          "Name": "version",
+          "ParentName": "sat",
+          "Name": "endpoint",
           "Aliases": null,
-          "Description": "View and manage Satellite configuration versions.",
+          "Description": "View and manage Satellite endpoints.",
           "Stage": ""
         },
         {
@@ -633,11 +633,11 @@
           "Stage": ""
         },
         {
-          "ParentName": "sat resource",
-          "Name": "history",
+          "ParentName": "sat",
+          "Name": "mesh",
           "Aliases": null,
-          "Description": "Get history for a Kubernetes resource.",
-          "Stage": ""
+          "Description": "View and modify Satellite Mesh instances.",
+          "Stage": "experimental"
         },
         {
           "ParentName": "sat",
@@ -654,26 +654,33 @@
           "Stage": ""
         },
         {
-          "ParentName": "sat storage",
-          "Name": "template",
-          "Aliases": null,
-          "Description": "View the Satellite storage templates.",
+          "ParentName": "sat",
+          "Name": "subscription",
+          "Aliases": [
+            "sub"
+          ],
+          "Description": "View and manage Satellite subscriptions to deploy Kubernetes configuration files to your clusters.",
           "Stage": ""
         },
         {
-          "ParentName": "sat storage config",
-          "Name": "param",
+          "ParentName": "sat config",
+          "Name": "version",
           "Aliases": null,
-          "Description": "Edit the config and secret parameters of a Satellite storage configuration.",
-          "Stage": "beta"
+          "Description": "View and manage Satellite configuration versions.",
+          "Stage": ""
         },
         {
-          "ParentName": "sat storage config",
-          "Name": "class",
-          "Aliases": [
-            "sc"
-          ],
-          "Description": "View and manage the storage classes in your Satellite storage configuration.",
+          "ParentName": "sat location",
+          "Name": "dns",
+          "Aliases": null,
+          "Description": "Create and manage subdomains for the hosts assigned to the control plane in a Satellite location.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "sat resource",
+          "Name": "history",
+          "Aliases": null,
+          "Description": "Get history for a Kubernetes resource.",
           "Stage": ""
         },
         {
@@ -691,40 +698,33 @@
           "Stage": "beta"
         },
         {
-          "ParentName": "sat",
-          "Name": "storage",
+          "ParentName": "sat storage",
+          "Name": "template",
           "Aliases": null,
-          "Description": "View and manage Satellite storage resources.",
+          "Description": "View the Satellite storage templates.",
           "Stage": ""
+        },
+        {
+          "ParentName": "sat storage config",
+          "Name": "class",
+          "Aliases": [
+            "sc"
+          ],
+          "Description": "View and manage the storage classes in your Satellite storage configuration.",
+          "Stage": ""
+        },
+        {
+          "ParentName": "sat storage config",
+          "Name": "param",
+          "Aliases": null,
+          "Description": "Edit the config and secret parameters of a Satellite storage configuration.",
+          "Stage": "beta"
         },
         {
           "ParentName": "sat subscription",
           "Name": "identity",
           "Aliases": null,
           "Description": "Manage the identity used to apply the Satellite subscription.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "sat",
-          "Name": "subscription",
-          "Aliases": [
-            "sub"
-          ],
-          "Description": "View and manage Satellite subscriptions to deploy Kubernetes configuration files to your clusters.",
-          "Stage": ""
-        },
-        {
-          "ParentName": "sat",
-          "Name": "mesh",
-          "Aliases": null,
-          "Description": "View and modify Satellite Mesh instances.",
-          "Stage": "experimental"
-        },
-        {
-          "ParentName": "",
-          "Name": "sat",
-          "Aliases": null,
-          "Description": "Manage IBM Cloud Satellite clusters.",
           "Stage": ""
         }
       ],

@@ -1,0 +1,19 @@
+apiVersion: v1
+clusters:
+- cluster:
+    server: https://c116-e.us-south.containers.cloud.ibm.com:31812
+  name: itzroks-sahil1112-k82bnvty/cdr014ud0rdfufbind0g
+contexts:
+- context:
+    cluster: itzroks-sahil1112-k82bnvty/cdr014ud0rdfufbind0g
+    namespace: default
+    user: admin/cdr014ud0rdfufbind0g
+  name: itzroks-sahil1112-k82bnvty/cdr014ud0rdfufbind0g/admin
+current-context: itzroks-sahil1112-k82bnvty/cdr014ud0rdfufbind0g/admin
+kind: Config
+preferences: {}
+users:
+- name: admin/cdr014ud0rdfufbind0g
+  user:
+    client-certificate: admin.pem
+    client-key: admin-key.pem
